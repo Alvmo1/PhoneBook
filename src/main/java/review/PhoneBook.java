@@ -51,12 +51,12 @@ public class PhoneBook {
 
     //lookUp(name) - return phone numbers(s)
     public List<String> lookUp(String name){
-        List<String> numbers = phoneRecord.get(name);
-        if(numbers == null){
+        List<String> phoneNumbers = phoneRecord.get(name);
+        if(phoneNumbers == null){
             return new ArrayList<>();
         }
         //return a list of phone numbers that belong to the name
-        return numbers;
+        return phoneNumbers;
     }
 
     //reverse lookUp (phoneNumber) - return phone name
