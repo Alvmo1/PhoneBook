@@ -2,10 +2,7 @@ package review;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -45,5 +42,10 @@ class PhoneBookTest {
         String phoneNumber = "302-543-5533";
         String actual = expected;
         assertEquals(expected, actual);
+    }
+    @Test
+    void PhoneBookTest(){
+        PhoneBook phoneBook = new PhoneBook();
+        assertTrue(phoneBook.getPhoneRecord() instanceof HashMap<String, List<String>>);
     }
 }
